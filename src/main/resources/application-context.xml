@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean name="car" class="com.myspring.beans.Car">
+        <property name = "name" value = "Nexon"/>
+        <property name="brand" value="Tata"/>
+        <property name="engine" ref="eng"/>
+    </bean>
+
+    <bean name="eng" class = "com.myspring.beans.Engine">
+        <property name="eName" value="tataengine"/>
+        <property name="hp" value="5000"/>
+    </bean>
+
+</beans>
